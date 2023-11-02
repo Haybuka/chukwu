@@ -13,3 +13,11 @@
 .grid_card:nth-of-type(even) {
   @apply translate-y-8;
 }
+
+/* .card:has(:not(.card:not(.))) {
+  @apply bg-red-400;
+} */
+
+.card:hover ~ *.card:not(.card:hover) {
+  @apply opacity-50;
+}

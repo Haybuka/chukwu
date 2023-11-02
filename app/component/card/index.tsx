@@ -18,7 +18,7 @@ const Card = ({ fullWidth, card }: CardProps) => {
       className={cls(styles.card, fullWidth ? 'w-full' : styles.grid_card)}
     >
       <div className="">
-        <h4 className="text-white text-xl">{card.name}</h4>
+        <h4 className="text-white text-xl capitalize">{card.name}</h4>
         <p className=" text-portfolio-400 text-[0.65rem] uppercase my-2">
           {card.stack}
         </p>
