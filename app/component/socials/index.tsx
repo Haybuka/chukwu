@@ -3,16 +3,17 @@ import styles from './socials.module.css';
 import AvatarBlob from './blob';
 import Image from 'next/image';
 import SocialIcon from './socialIcons';
+import IconType from '../icon/iconType';
 
 const socials = [
   {
     name: 'github',
-    icon: 'git',
+    icon: 'github',
     link: '',
   },
   {
     name: 'twitter',
-    icon: 'tw',
+    icon: 'twitter',
     link: '',
   },
   {
@@ -25,10 +26,7 @@ const Socials = () => {
   return (
     <footer>
       <aside className="flex items-center ">
-        <div className={styles.avatar}>
-          {/* <Image width={60} height={60} alt="" src={'/avatar.jpg'} /> */}
-          {/* <AvatarBlob /> */}
-        </div>
+        <div className={styles.avatar}></div>
         <div className="flex items-center text-[12px] justify-evenly">
           {socials.map((social, id) => (
             <Link
@@ -36,7 +34,7 @@ const Socials = () => {
               key={id}
               className="capitalize flex items-center mx-2"
             >
-              {SocialIcon(social.icon)}
+              <IconType icon={social.icon} />
               <span>{social.name}</span>
               <span className=" rotate-45 inline-block text-portfolio-100 mx-1">
                 <svg
