@@ -7,11 +7,16 @@
 }
 
 .grid_card {
-  @apply col-span-6 flex justify-between flex-col h-80 my-0 px-8;
+  @apply col-span-12 md:col-span-6 flex justify-between flex-col h-80 my-0 px-8;
 }
 
-.grid_card:nth-of-type(even) {
-  @apply translate-y-8;
+.grid_article_card {
+  @apply col-span-12 md:col-span-6 flex justify-between flex-col md:h-[25rem] my-0 px-8;
+}
+
+.grid_card:nth-of-type(even),
+.grid_article_card:nth-of-type(even) {
+  @apply md:translate-y-8;
 }
 
 /* .card:has(:not(.card:not(.))) {
@@ -20,4 +25,8 @@
 
 .card:hover ~ *.card:not(.card:hover) {
   @apply opacity-50;
+}
+
+.article_description {
+  @apply my-3 text-lg text-white font-semibold;
 }

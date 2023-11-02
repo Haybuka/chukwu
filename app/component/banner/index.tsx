@@ -1,12 +1,36 @@
+import { Titillium_Web, Inter } from 'next/font/google';
+import cls from 'classnames';
+
+const titilium = Titillium_Web({ subsets: ['latin'], weight: '600' });
+const inter = Inter({ subsets: ['latin'], weight: '800' });
 const Banner = () => {
   return (
     <article>
-      <h3 className="text-[46px]">
-        <span className="block">Hello, Im</span>
-        <span className="block">Jessica Japeth.</span>
+      <h3 className="">
+        <span
+          className={cls(
+            inter.className,
+            'block capitalize font-bold my-2 text-2xl lg:text-3xl xl:text-[46px]'
+          )}
+        >
+          Chukwu Paschal.
+        </span>
+        <span
+          className={cls(
+            inter.className,
+            'block capitalize font-bold my-2 md:my-4 text-lg md:text-xl'
+          )}
+        >
+          Frontend And React Native Engineer.
+        </span>
       </h3>
-      <div className=" text-portfolio-100 my-4">
-        <p className=" leading-8 text-sm">
+      <div
+        className={cls(
+          titilium.className,
+          ' text-portfolio-100 my-4 hidden lg:block'
+        )}
+      >
+        <p className="lg:leading-8 text-sm">
           Im a <span className="text-white">software engineer</span>. I create{' '}
           <span className="text-white">interactive</span> web
         </p>
@@ -16,6 +40,22 @@ const Banner = () => {
         </p>
         <p className=" leading-8 text-sm">
           accessibility, design systems, gaming, web3 and web animations.
+        </p>
+      </div>
+      <div className=" text-portfolio-100 my-4 block lg:hidden">
+        <p className="leading-8 text-sm">
+          Im a{' '}
+          <span className="text-white capitalize underline">
+            software engineer
+          </span>
+          . I create{' '}
+          <span className="text-white capitalize underline">interactive</span>{' '}
+          web experiences using frontend technology. I am interested in
+          <span className="text-white capitalize underline">
+            {' '}
+            user experience
+          </span>
+          , accessibility, design systems, gaming, web3 and web animations.
         </p>
       </div>
     </article>

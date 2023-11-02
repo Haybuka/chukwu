@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import cls from 'classnames';
 
 import styles from './navigation.module.css';
+import { Inter, Titillium_Web } from 'next/font/google';
 
 const navigation = [
   { name: 'work', path: '/' },
@@ -11,15 +12,15 @@ const navigation = [
   { name: 'linked In', path: '/linked' },
 ];
 
+const titilium = Titillium_Web({ subsets: ['latin'], weight: '600' });
+const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
+
 const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <header className="w-1/2">
-      <nav>
-        {/* {navigation.map((nav, id) => (
-          
-        ))} */}
+    <header className="w-1/2 hidden lg:block">
+      <nav className={inter.className}>
         <Link
           href={'/'}
           className={cls(

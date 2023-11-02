@@ -1,11 +1,13 @@
 .link {
-  @apply uppercase text-[12px] my-8 flex items-center;
+  @apply uppercase text-[12px] my-8 flex items-center font-normal;
 }
 
 .link:hover .divider {
   @apply w-16 bg-white;
 }
-
+.active_link {
+  @apply font-semibold;
+}
 .active_link .divider {
   @apply w-16 bg-white;
 }
