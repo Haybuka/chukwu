@@ -10,7 +10,7 @@ const Banner = () => {
         <span
           className={cls(
             inter.className,
-            'block capitalize font-bold my-2 text-2xl lg:text-3xl xl:text-[46px]'
+            'block capitalize font-bold my-2 text-3xl xl:text-[46px]'
           )}
         >
           Chukwu Paschal.
@@ -18,7 +18,7 @@ const Banner = () => {
         <span
           className={cls(
             inter.className,
-            'block capitalize font-bold my-2 md:my-4 text-lg md:text-xl'
+            'block capitalize font-semibold my-2 md:my-4 text-lg md:text-xl'
           )}
         >
           Frontend And React Native Engineer.
