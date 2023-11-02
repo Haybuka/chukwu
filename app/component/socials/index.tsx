@@ -26,7 +26,7 @@ const Socials = () => {
   return (
     <footer>
       <aside className="flex items-center -z-10 relative">
-        <div className={styles.avatar}></div>
+        {/* <div className={styles.avatar}></div> */}
         <div className="flex items-center text-[12px] justify-evenly">
           {socials.map((social, id) => (
             <Link
