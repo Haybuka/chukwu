@@ -33,8 +33,8 @@ const ViewObserver = ({ featured, title }: ViewObserverProp) => {
             <div ref={ref}>
               <h3
                 className={cls(
-                  styles.title_header
-                  // inView ? styles.title_view : 'bg-white shadow-none'
+                  styles.title_header,
+                  inView ? styles.title_view : 'bg-transparent shadow-none'
                 )}
               >
                 {title}

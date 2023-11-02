@@ -3,6 +3,6 @@
 }
 
 .title_view {
-  @apply lg:text-portfolio-100 uppercase text-[0.75rem] mb-6 sticky transition-all top-0 left-0 shadow-lg lg:shadow-none py-6 px-4 text-white lg:px-4 lg:py-3 bg-portfolio-300 lg:bg-transparent lg:relative z-10;
+  @apply lg:text-portfolio-100 uppercase text-[0.75rem] mb-6 sticky transition-all top-0 left-0 py-6 px-4 text-white lg:px-4 lg:py-3 lg:bg-transparent lg:relative z-10;
   position: -webkit-sticky;
 }
