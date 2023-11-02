@@ -3,6 +3,6 @@
 }
 
 .header {
-  @apply text-portfolio-100 uppercase text-[0.75rem] mb-6 sticky top-0 py-3 bg-white lg:bg-transparent lg:relative;
+  @apply text-portfolio-100 uppercase text-[0.75rem] mb-6 sticky transition-all top-0 left-0 shadow-lg lg:shadow-none py-3 bg-portfolio-300 lg:bg-transparent lg:relative z-10;
   position: -webkit-sticky;
 }

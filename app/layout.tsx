@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cls(poppins.className, 'bg-portfolio-200')}>
-        <main className="lg:flex min-h-screen items-start justify-between px-6 lg:px-12 xl:px-20">
-          <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20  flex justify-between items-start flex-col text-white">
+        <main className="lg:flex min-h-screen items-start justify-between  lg:px-12 xl:px-20">
+          <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20 px-6 flex justify-between items-start flex-col text-white">
             <Banner />
             <Navigation />
             <Socials />

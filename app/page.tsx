@@ -1,4 +1,5 @@
 import Featured from './component/featured';
+import styles from './home.module.css';
 
 const featured = [
   {
@@ -145,13 +146,18 @@ const others = [
 export default function Home() {
   return (
     <article className="xl:px-6">
-      <Featured
-        details={featured}
-        fullwidth={true}
-        title="Featured"
-        page="home"
-      />
-      <div className="pt-8 ">
+      <h3 className={styles.title_header}>Featured</h3>
+      <aside className="px-6">
+        <Featured
+          details={featured}
+          fullwidth={true}
+          title="Featured"
+          page="home"
+        />
+      </aside>
+
+      <h3 className={styles.title_header}>Others</h3>
+      <div className="pt-8 px-6">
         <Featured
           details={others}
           fullwidth={false}
