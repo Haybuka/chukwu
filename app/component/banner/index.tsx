@@ -10,7 +10,7 @@ const Banner = () => {
         <span
           className={cls(
             inter.className,
-            'block capitalize font-bold my-2 text-[2.6rem] xl:text-6xl'
+            'block capitalize font-bold my-2 text-[2.4rem] xl:text-6xl'
           )}
         >
           Chukwu Paschal.
