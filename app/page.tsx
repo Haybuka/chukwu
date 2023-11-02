@@ -141,6 +141,7 @@ const others = [
     ],
   },
 ];
+
 export default function Home() {
   return (
     <article className="xl:px-6">
