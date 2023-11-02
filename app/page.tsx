@@ -142,21 +142,41 @@ const others = [
   },
 ];
 
+const articles = [
+  {
+    name: 'Yaargs!!',
+    description: 'Command Line Notes App & Parsing using NodeJS and Yargs.',
+    stack: 'October 22, 2022',
+    links: [
+      {
+        label: '9 min read',
+        path: 'https://chukwu.hashnode.dev/command-line-notes-app-parsing-using-nodejs-and-yargs',
+        icon: 'clock',
+      },
+    ],
+  },
+  {
+    name: 'Life cycle methods',
+    description:
+      'A quick glance at some of react life cycle method and how they intersect.',
+    stack: 'May 31, 2022',
+    links: [
+      {
+        label: '4 min read',
+        path: 'https://chukwu.hashnode.dev/react-lifecycle-method',
+        icon: 'clock',
+      },
+    ],
+  },
+];
 export default function Home() {
   return (
     <article className="xl:px-6">
       <ViewObserver featured={featured} title="Featured" />
       <ViewObserver featured={others} title="Others" />
-
-      {/* <h3 className={styles.title_header}>Others</h3>
-      <div className="pt-8 px-6">
-        <Featured
-          details={others}
-          fullwidth={false}
-          title="Others"
-          page="home"
-        />
-      </div> */}
+      <div className="lg:hidden">
+        <ViewObserver featured={articles} title="Articles" />
+      </div>
     </article>
   );
 }
