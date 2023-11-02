@@ -19,12 +19,8 @@
   @apply md:translate-y-8;
 }
 
-/* .card:has(:not(.card:not(.))) {
-  @apply bg-red-400;
-} */
-
 .card:hover ~ *.card:not(.card:hover) {
-  @apply opacity-50;
+  @apply lg:opacity-50;
 }
 
 .article_description {
