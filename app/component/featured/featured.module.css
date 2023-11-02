@@ -1,0 +1,7 @@
+.featured {
+  @apply grid grid-cols-12 gap-2;
+}
+
+.featured > .card:nth-child(2) {
+  background-color: red !important;
+}

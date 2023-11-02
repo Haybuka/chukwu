@@ -1,0 +1,7 @@
+.card {
+  @apply bg-portfolio-300 p-10 my-2 hover:scale-110  transition-all;
+}
+
+.card:not(.featured .card) {
+  /* @apply bg-red-500; */
+}

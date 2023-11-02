@@ -1,5 +1,5 @@
 .avatar {
-  @apply h-14 w-14 relative;
+  @apply h-20 w-20 relative;
   background-image: url('/blob.svg');
   background-repeat: no-repeat;
   background-size: cover;
