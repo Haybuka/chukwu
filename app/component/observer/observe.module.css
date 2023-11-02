@@ -1,5 +1,5 @@
 .title_header {
-  @apply text-portfolio-100 uppercase text-[0.75rem] mb-6 transition-all px-4 py-3;
+  @apply text-white lg:text-portfolio-100 uppercase text-[0.75rem] mb-6 transition-all px-4 py-3;
 }
 
 .title_view {
