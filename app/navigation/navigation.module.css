@@ -1,0 +1,15 @@
+.link {
+  @apply uppercase text-[12px] my-8 flex items-center;
+}
+
+.link:hover .divider {
+  @apply w-16 bg-white;
+}
+
+.active_link .divider {
+  @apply w-16 bg-white;
+}
+
+.divider {
+  @apply inline-block w-10 h-[1px] bg-portfolio-100 mx-3 transition-all;
+}
