@@ -31,7 +31,7 @@ const articles = [
 
 const Articles = () => {
   return (
-    <div className="pt-8 px-6">
+    <div className="pt-8 md:px-6">
       <Featured
         details={articles}
         fullwidth={false}
