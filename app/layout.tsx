@@ -5,6 +5,8 @@ import Navigation from './component/navigation';
 import Banner from './component/banner';
 import Socials from './component/socials';
 
+import styles from './layout.module.css';
+
 const inter = Inter({ subsets: ['latin'] });
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
@@ -27,9 +29,7 @@ export default function RootLayout({
             <Navigation />
             <Socials />
           </section>
-          <section className="h-screen w-1/2 overflow-y-scroll ">
-            {children}
-          </section>
+          <section className={styles.home}>{children}</section>
         </main>
       </body>
     </html>

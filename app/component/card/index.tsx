@@ -14,12 +14,16 @@ type CardProps = {
 
 const Card = ({ fullWidth, card }: CardProps) => {
   return (
-    <aside className={cls(styles.card, fullWidth ? 'w-full' : 'col-span-6')}>
-      <h4 className="text-white text-xl">{card.name}</h4>
-      <p className=" text-portfolio-400 text-[0.65rem] uppercase my-2">
-        {card.stack}
-      </p>
-      <p className="text-portfolio-100 text-sm my-3">{card.description}</p>
+    <aside
+      className={cls(styles.card, fullWidth ? 'w-full' : styles.grid_card)}
+    >
+      <div className="">
+        <h4 className="text-white text-xl">{card.name}</h4>
+        <p className=" text-portfolio-400 text-[0.65rem] uppercase my-2">
+          {card.stack}
+        </p>
+        <p className={cls(styles.description)}>{card.description}</p>
+      </div>
       <p className=" text-portfolio-400 my-3 text-sm">
         <span></span>
         <span>Live</span>

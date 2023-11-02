@@ -23,11 +23,21 @@ const featured = [
   },
 ];
 
+const others = [
+  {
+    name: ' Card UI',
+    description: 'Credit card UI build with validation',
+    stack: 'Typescript + Formik + TailwindCss',
+    link: 'https://cardts.netlify.app/',
+  },
+];
 export default function Home() {
   return (
     <article className="px-6">
       <Featured featured={featured} fullwidth={true} title="Featured" />
-      <Featured featured={featured} fullwidth={false} title="Featured" />
+      <div className="pt-8 ">
+        <Featured featured={others} fullwidth={false} title="Others" />
+      </div>
     </article>
   );
 }

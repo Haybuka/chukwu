@@ -2,6 +2,14 @@
   @apply bg-portfolio-300 p-10 my-2 hover:scale-110  transition-all;
 }
 
-.card:not(.featured .card) {
-  /* @apply bg-red-500; */
+.description {
+  @apply text-portfolio-100 text-[0.7rem] my-3;
+}
+
+.grid_card {
+  @apply col-span-6 flex justify-between flex-col h-80 my-0 px-8;
+}
+
+.grid_card:nth-of-type(even) {
+  @apply translate-y-8;
 }
