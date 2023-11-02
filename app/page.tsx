@@ -1,5 +1,4 @@
-import Featured from './component/featured';
-import styles from './home.module.css';
+import ViewObserver from './component/observer';
 
 const featured = [
   {
@@ -146,17 +145,10 @@ const others = [
 export default function Home() {
   return (
     <article className="xl:px-6">
-      <h3 className={styles.title_header}>Featured</h3>
-      <aside className="px-6">
-        <Featured
-          details={featured}
-          fullwidth={true}
-          title="Featured"
-          page="home"
-        />
-      </aside>
+      <ViewObserver featured={featured} title="Featured" />
+      <ViewObserver featured={others} title="Others" />
 
-      <h3 className={styles.title_header}>Others</h3>
+      {/* <h3 className={styles.title_header}>Others</h3>
       <div className="pt-8 px-6">
         <Featured
           details={others}
@@ -164,7 +156,7 @@ export default function Home() {
           title="Others"
           page="home"
         />
-      </div>
+      </div> */}
     </article>
   );
 }
