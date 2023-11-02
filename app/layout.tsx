@@ -36,9 +36,7 @@ export default function RootLayout({
             <Socials />
           </section>
 
-          <section className={cls(styles.home, 'px-6 lg:px-0')}>
-            {children}
-          </section>
+          <section className={cls(styles.home, ' lg:px-0')}>{children}</section>
           <footer className={cls('lg:hidden  px-6 mb-6')}>
             <section className="flex items-center gap-x-4 text-white justify-between">
               <Link
