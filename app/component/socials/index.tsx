@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import styles from './socials.module.css';
-import AvatarBlob from './blob';
-import Image from 'next/image';
-import SocialIcon from './socialIcons';
+
 import IconType from '../icon/iconType';
 
 const socials = [

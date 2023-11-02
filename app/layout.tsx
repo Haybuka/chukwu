@@ -6,9 +6,8 @@ import Banner from './component/banner';
 import Socials from './component/socials';
 
 import styles from './layout.module.css';
-import useMobile from './hook/useMobile';
+import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] });
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
@@ -30,7 +29,6 @@ export default function RootLayout({
               <span className="w-10 h-[1px] bg-white block my-1"></span>
               <span className="w-8 h-[1px] bg-white block my-1"></span>
             </nav>
-            {/* <div className="h-screen bg-portfolio-300 w-full lg:hidden"></div> */}
           </header>
           <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20 px-6 flex justify-between items-start flex-col text-white">
             <Banner />
@@ -38,7 +36,25 @@ export default function RootLayout({
             <Socials />
           </section>
 
-          <section className={cls(styles.home)}>{children}</section>
+          <section className={cls(styles.home, 'px-6 lg:px-0')}>
+            {children}
+          </section>
+          <footer className={cls('lg:hidden  px-6 mb-6')}>
+            <section className="flex items-center gap-x-4 text-white justify-between">
+              <Link
+                href={'/'}
+                className="py-3 px-4 bg-portfolio-300 w-1/2 rounded-md text-center"
+              >
+                Home
+              </Link>
+              <Link
+                href={'/article'}
+                className="py-3 px-4 bg-portfolio-300 w-1/2 rounded-md text-center"
+              >
+                Articles
+              </Link>
+            </section>
+          </footer>
         </main>
       </body>
     </html>

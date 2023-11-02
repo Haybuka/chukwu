@@ -142,41 +142,41 @@ const others = [
   },
 ];
 
-const articles = [
-  {
-    name: 'Yaargs!!',
-    description: 'Command Line Notes App & Parsing using NodeJS and Yargs.',
-    stack: 'October 22, 2022',
-    links: [
-      {
-        label: '9 min read',
-        path: 'https://chukwu.hashnode.dev/command-line-notes-app-parsing-using-nodejs-and-yargs',
-        icon: 'clock',
-      },
-    ],
-  },
-  {
-    name: 'Life cycle methods',
-    description:
-      'A quick glance at some of react life cycle method and how they intersect.',
-    stack: 'May 31, 2022',
-    links: [
-      {
-        label: '4 min read',
-        path: 'https://chukwu.hashnode.dev/react-lifecycle-method',
-        icon: 'clock',
-      },
-    ],
-  },
-];
+// const articles = [
+//   {
+//     name: 'Yaargs!!',
+//     description: 'Command Line Notes App & Parsing using NodeJS and Yargs.',
+//     stack: 'October 22, 2022',
+//     links: [
+//       {
+//         label: '9 min read',
+//         path: 'https://chukwu.hashnode.dev/command-line-notes-app-parsing-using-nodejs-and-yargs',
+//         icon: 'clock',
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Life cycle methods',
+//     description:
+//       'A quick glance at some of react life cycle method and how they intersect.',
+//     stack: 'May 31, 2022',
+//     links: [
+//       {
+//         label: '4 min read',
+//         path: 'https://chukwu.hashnode.dev/react-lifecycle-method',
+//         icon: 'clock',
+//       },
+//     ],
+//   },
+// ];
 export default function Home() {
   return (
     <article className="xl:px-6">
       <ViewObserver featured={featured} title="Featured" fullWidth={true} />
       <ViewObserver featured={others} title="Others" fullWidth={false} />
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
         <ViewObserver featured={articles} title="Articles" fullWidth={true} />
-      </div>
+      </div> */}
     </article>
   );
 }
