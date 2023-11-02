@@ -1,5 +1,5 @@
 .card {
-  @apply bg-portfolio-300 p-10 my-2 hover:scale-110  transition-all;
+  @apply bg-portfolio-300 p-10 my-3  md:hover:scale-110  transition-all;
 }
 
 .description {
@@ -7,7 +7,7 @@
 }
 
 .grid_card {
-  @apply col-span-12 md:col-span-6 flex justify-between flex-col h-80 my-0 px-8;
+  @apply col-span-12 md:col-span-6 flex justify-between flex-col h-72 md:h-80  my-0 px-8;
 }
 
 .grid_article_card {
