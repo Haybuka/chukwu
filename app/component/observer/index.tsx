@@ -18,9 +18,10 @@ type ViewObserverProp = {
     }[];
   }[];
   title: string;
+  fullWidth: boolean;
 };
 
-const ViewObserver = ({ featured, title }: ViewObserverProp) => {
+const ViewObserver = ({ featured, title, fullWidth }: ViewObserverProp) => {
   const { ref, inView, entry } = useInView({
     threshold: 0,
   });
@@ -42,7 +43,7 @@ const ViewObserver = ({ featured, title }: ViewObserverProp) => {
               <aside className="px-6">
                 <Featured
                   details={featured}
-                  fullwidth={true}
+                  fullwidth={fullWidth}
                   title="Featured"
                   page="home"
                 />

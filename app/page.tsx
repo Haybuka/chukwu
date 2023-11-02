@@ -172,10 +172,10 @@ const articles = [
 export default function Home() {
   return (
     <article className="xl:px-6">
-      <ViewObserver featured={featured} title="Featured" />
-      <ViewObserver featured={others} title="Others" />
+      <ViewObserver featured={featured} title="Featured" fullWidth={true} />
+      <ViewObserver featured={others} title="Others" fullWidth={false} />
       <div className="lg:hidden">
-        <ViewObserver featured={articles} title="Articles" />
+        <ViewObserver featured={articles} title="Articles" fullWidth={true} />
       </div>
     </article>
   );
