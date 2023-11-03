@@ -5,6 +5,7 @@ import cls from 'classnames';
 
 import styles from './navigation.module.css';
 import { Inter } from 'next/font/google';
+import { navigation } from '@/utils/content';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -14,39 +15,25 @@ const Navigation = () => {
   return (
     <header className="w-1/2 hidden lg:block">
       <nav className={inter.className}>
-        <Link
-          href={'/'}
-          className={cls(
-            styles.link,
-            ` ${pathname === '/home' && styles.active_link}`
-          )}
-        >
-          <span>00</span>
-          <span className={styles.divider}></span>
-          <span>Work</span>
-        </Link>
-        <Link
-          href={'/article'}
-          className={cls(
-            styles.link,
-            ` ${pathname === '/article' && styles.active_link}`
-          )}
-        >
-          <span>01</span>
-          <span className={styles.divider}></span>
-          <span>Article</span>
-        </Link>
-        <Link
-          href={'https://linkedin.com/in/paschal-ndulue-336980134'}
-          className={cls(
-            styles.link,
-            ` ${pathname === '' && styles.active_link}`
-          )}
-        >
-          <span>02</span>
-          <span className={styles.divider}></span>
-          <span>Linked In</span>
-        </Link>
+        {navigation.map((navigate, id) => {
+          return (
+            <Link
+              key={id}
+              href={navigate.link}
+              className={cls(
+                styles.link,
+                ` ${
+                  pathname.toLowerCase() === navigate.link.toLowerCase() &&
+                  styles.active_link
+                }`
+              )}
+            >
+              <span>0{id}</span>
+              <span className={styles.divider}></span>
+              <span>{navigate.name}</span>
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );

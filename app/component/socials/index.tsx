@@ -1,24 +1,8 @@
 import Link from 'next/link';
 
 import IconType from '../icon/iconType';
+import { socials } from '@/utils/content';
 
-const socials = [
-  {
-    name: 'github',
-    icon: 'github',
-    link: 'https://www.github.com/haybuka  ',
-  },
-  {
-    name: 'twitter',
-    icon: 'twitter',
-    link: 'https://twitter.com/haybukarh',
-  },
-  {
-    name: 'email',
-    icon: 'mail',
-    link: 'mailto:paschal.nduleo@gmail.com',
-  },
-];
 const Socials = () => {
   return (
     <footer className="">

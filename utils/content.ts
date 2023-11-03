@@ -167,3 +167,38 @@ export const articles = [
     ],
   },
 ];
+
+export const socials = [
+  {
+    name: 'github',
+    icon: 'github',
+    link: 'https://www.github.com/haybuka  ',
+  },
+  {
+    name: 'twitter',
+    icon: 'twitter',
+    link: 'https://twitter.com/haybukarh',
+  },
+  {
+    name: 'email',
+    icon: 'mail',
+    link: 'mailto:paschal.nduleo@gmail.com',
+  },
+];
+export const navigation = [
+  {
+    name: 'Work',
+    icon: '',
+    link: '/home',
+  },
+  {
+    name: 'article',
+    icon: '',
+    link: '/article',
+  },
+  {
+    name: 'Linked In',
+    icon: '',
+    link: 'https://linkedin.com/in/paschal-ndulue-336980134',
+  },
+];
