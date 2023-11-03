@@ -37,7 +37,7 @@ const MobileNavigation = () => {
 
       <section
         className={cls(
-          `absolute top-16 h-screen bg-portfolio-300 w-full left-0 text-center py-6 flex flex-col items-center -translate-x-[100vw] transition-all`,
+          `absolute top-16 h-screen bg-portfolio-300 w-full left-0 text-center py-6 flex flex-col items-center -translate-x-[100vw] transition-all duration-300`,
           visible && `translate-x-0`
         )}
       >
