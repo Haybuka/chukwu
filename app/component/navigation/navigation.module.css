@@ -21,7 +21,7 @@
 }
 
 .line_one_cross {
-  @apply w-8 h-[1px] bg-white block;
+  @apply w-6 h-[1px] bg-white block;
   animation: lineOne 0.25s both ease-in;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .line_two_cross {
-  @apply w-8 h-[1px] block;
+  @apply w-6 h-[1px] block;
   animation: lineTwo 0.25s both ease-in;
 }
 
@@ -47,7 +47,6 @@
   }
   75% {
     transform-origin: left;
-    /* transform: rotate(45deg); */
     transform: translateY(3px) rotate(45deg);
   }
   100% {
@@ -69,18 +68,10 @@
   }
   75% {
     transform-origin: right;
-    transform: translate(-8px, -6px) rotate(-45deg);
+    transform: translate(-7px, -6px) rotate(-45deg);
   }
   100% {
     transform-origin: right;
-    transform: translate(-8px, -6px) rotate(-45deg);
+    transform: translate(-7px, -6px) rotate(-45deg);
   }
-  /* 50% {
-    transform: rotate(-90deg);
-    transform-origin: left;
-  }
-  100% {
-    transform: rotate(-45deg);
-    transform-origin: left;
-  } */
 }

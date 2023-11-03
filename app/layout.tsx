@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cls(poppins.className, 'bg-portfolio-200')}>
-        <main className="lg:flex min-h-screen items-start justify-between  lg:px-12 xl:px-20">
+        <main className="lg:flex min-h-screen items-start justify-between md:pb-6 lg:px-12 xl:px-20">
           <MobileNavigation />
           <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20 px-6 flex justify-between items-start flex-col text-white">
             <Banner />
@@ -34,7 +34,7 @@ export default function RootLayout({
           </section>
 
           <section className={cls(styles.home, ' lg:px-0')}>{children}</section>
-          <footer className={cls('lg:hidden  px-6 mb-6')}>
+          {/* <footer className={cls('lg:hidden  px-6 mb-6')}>
             <section className="flex items-center gap-x-4 text-white justify-between">
               <Link
                 href={'/'}
@@ -49,7 +49,7 @@ export default function RootLayout({
                 Articles
               </Link>
             </section>
-          </footer>
+          </footer> */}
         </main>
       </body>
     </html>

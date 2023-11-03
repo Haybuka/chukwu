@@ -5,6 +5,7 @@ import styles from './navigation.module.css';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import { usePathname } from 'next/navigation';
+import IconType from '../icon/iconType';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
@@ -74,6 +75,14 @@ const MobileNavigation = () => {
           <span className={styles.divider}></span>
           <span>Linked In</span>
         </Link>
+        <aside className="w-[40%]">
+          <p className="my-6">Connect With Me</p>
+          <div className="flex items-center justify-between ">
+            <IconType icon="twitter" size={5} />
+            <IconType icon="github" size={5} />
+            <IconType icon="mail" size={5} />
+          </div>
+        </aside>
       </section>
     </header>
   );

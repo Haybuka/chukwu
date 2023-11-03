@@ -1,0 +1,3 @@
+interface IconPropType {
+  size?: number;
+}

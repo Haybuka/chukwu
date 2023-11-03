@@ -8,24 +8,25 @@ import TwitterIcon from '../socials/twitter';
 
 type PageTypeProp = {
   icon: string;
+  size?: number | undefined;
 };
 
-const IconType = ({ icon }: PageTypeProp) => {
+const IconType = ({ icon, size }: PageTypeProp) => {
   switch (icon.toLowerCase()) {
     case 'eye':
-      return <EyeIcon />;
+      return <EyeIcon size={size} />;
     case 'link':
       return '';
     case 'clock':
-      return <ClockIcon />;
+      return <ClockIcon size={size} />;
     case 'code':
-      return <CodeIcon />;
+      return <CodeIcon size={size} />;
     case 'github':
-      return <GithubIcon />;
+      return <GithubIcon size={size} />;
     case 'mail':
-      return <Email />;
+      return <Email size={size} />;
     case 'twitter':
-      return <TwitterIcon />;
+      return <TwitterIcon size={size} />;
     default:
       break;
   }

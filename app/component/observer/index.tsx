@@ -4,7 +4,6 @@ import styles from './observe.module.css';
 import Featured from '../featured';
 import ScrollWrapper from './scrollView';
 import cls from 'classnames';
-import { useEffect, useState } from 'react';
 
 type ViewObserverProp = {
   featured: {
@@ -35,7 +34,9 @@ const ViewObserver = ({ featured, title, fullWidth }: ViewObserverProp) => {
               <h3
                 className={cls(
                   styles.title_header,
-                  inView ? styles.title_view : 'bg-transparent shadow-none'
+                  inView
+                    ? `${styles.title_view} font-black`
+                    : 'bg-transparent shadow-none'
                 )}
               >
                 {title}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Email = () => {
+const Email = ({ size = 4 }: IconPropType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +8,7 @@ const Email = () => {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className="w-4 h-4 text-portfolio-100 mx-1"
+      className={`w-${size} h-${size} text-portfolio-100 mx-1`}
     >
       <path
         strokeLinecap="round"

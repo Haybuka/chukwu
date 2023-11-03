@@ -10,9 +10,3 @@ interface Link {
   path: string;
   icon: string;
 }
-
-// {
-//   label: string;
-//   path: string;
-//   icon: string;
-// }
