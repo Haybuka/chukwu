@@ -15,3 +15,72 @@
 .divider {
   @apply inline-block w-10 h-[1px] bg-portfolio-100 mx-3 transition-all;
 }
+
+.line_one {
+  @apply w-10 h-[1px] bg-white block my-1;
+}
+
+.line_one_cross {
+  @apply w-8 h-[1px] bg-white block;
+  animation: lineOne 0.25s both ease-in;
+}
+
+.line_two {
+  @apply w-8 h-[1px] bg-white block my-1;
+}
+
+.line_two_cross {
+  @apply w-8 h-[1px] block;
+  animation: lineTwo 0.25s both ease-in;
+}
+
+@keyframes lineOne {
+  0% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform-origin: left;
+    /* transform: rotate(45deg); */
+    transform: translateY(3px) rotate(45deg);
+  }
+  100% {
+    transform-origin: left;
+    transform: translateY(3px) rotate(45deg);
+  }
+}
+
+@keyframes lineTwo {
+  0% {
+    transform: rotate(0);
+    transform-origin: left;
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform-origin: right;
+    transform: translate(-8px, -6px) rotate(-45deg);
+  }
+  100% {
+    transform-origin: right;
+    transform: translate(-8px, -6px) rotate(-45deg);
+  }
+  /* 50% {
+    transform: rotate(-90deg);
+    transform-origin: left;
+  }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: left;
+  } */
+}

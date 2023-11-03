@@ -27,8 +27,12 @@ const MobileNavigation = () => {
         className="flex justify-end flex-col items-end p-1 "
         onClick={handleVisibility}
       >
-        <span className="w-10 h-[1px] bg-white block my-1"></span>
-        <span className="w-8 h-[1px] bg-white block my-1"></span>
+        <span
+          className={cls(styles.line_one, visible && styles.line_one_cross)}
+        ></span>
+        <span
+          className={cls(styles.line_two, visible && styles.line_two_cross)}
+        ></span>
       </nav>
 
       <section
