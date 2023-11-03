@@ -1,3 +1,4 @@
+// 'use client';
 import './globals.css';
 import { Inter, Poppins } from 'next/font/google';
 import cls from 'classnames';
@@ -7,6 +8,7 @@ import Socials from './component/socials';
 
 import styles from './layout.module.css';
 import Link from 'next/link';
+import MobileNavigation from './component/navigation/mobile';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
@@ -24,12 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cls(poppins.className, 'bg-portfolio-200')}>
         <main className="lg:flex min-h-screen items-start justify-between  lg:px-12 xl:px-20">
-          <header className="sticky transition-all top-0  w-screen shadow-lg lg:hidden py-6 px-4 flex justify-end text-white  bg-portfolio-300 ">
-            <nav className="flex justify-end flex-col items-end">
-              <span className="w-10 h-[1px] bg-white block my-1"></span>
-              <span className="w-8 h-[1px] bg-white block my-1"></span>
-            </nav>
-          </header>
+          <MobileNavigation />
           <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20 px-6 flex justify-between items-start flex-col text-white">
             <Banner />
             <Navigation />

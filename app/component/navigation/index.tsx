@@ -6,12 +6,6 @@ import cls from 'classnames';
 import styles from './navigation.module.css';
 import { Inter, Titillium_Web } from 'next/font/google';
 
-const navigation = [
-  { name: 'work', path: '/' },
-  { name: 'article', path: 'article' },
-  { name: 'linked In', path: '/linked' },
-];
-
 const titilium = Titillium_Web({ subsets: ['latin'], weight: '600' });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
