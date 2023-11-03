@@ -5,6 +5,7 @@ import CodeIcon from './code';
 import GithubIcon from './github';
 import Email from '../socials/email';
 import TwitterIcon from '../socials/twitter';
+import LinkIcon from './link';
 
 type PageTypeProp = {
   icon: string;
@@ -16,7 +17,7 @@ const IconType = ({ icon, size }: PageTypeProp) => {
     case 'eye':
       return <EyeIcon size={size} />;
     case 'link':
-      return '';
+      return <LinkIcon size={size} />;
     case 'clock':
       return <ClockIcon size={size} />;
     case 'code':
@@ -28,7 +29,7 @@ const IconType = ({ icon, size }: PageTypeProp) => {
     case 'twitter':
       return <TwitterIcon size={size} />;
     default:
-      break;
+      return <CodeIcon size={size} />;
   }
 };
 

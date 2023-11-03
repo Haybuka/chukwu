@@ -6,33 +6,33 @@ const socials = [
   {
     name: 'github',
     icon: 'github',
-    link: '',
+    link: 'https://www.github.com/haybuka  ',
   },
   {
     name: 'twitter',
     icon: 'twitter',
-    link: '',
+    link: 'https://twitter.com/haybukarh',
   },
   {
     name: 'email',
     icon: 'mail',
-    link: '',
+    link: 'mailto:paschal.nduleo@gmail.com',
   },
 ];
 const Socials = () => {
   return (
-    <footer>
-      <aside className="flex items-center -z-10 relative">
-        {/* <div className={styles.avatar}></div> */}
+    <footer className="">
+      <aside className="flex items-center  relative">
         <div className="flex items-center text-[12px] justify-evenly">
           {socials.map((social, id) => (
             <Link
               href={social.link}
               key={id}
               className="capitalize flex items-center mx-2"
+              target="_blank"
             >
               <IconType icon={social.icon} />
-              <span>{social.name}</span>
+              <span className="">{social.name}</span>
               <span className=" rotate-45 inline-block text-portfolio-100 mx-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

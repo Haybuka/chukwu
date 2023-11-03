@@ -3,11 +3,8 @@ import React, { useState } from 'react';
 import cls from 'classnames';
 import styles from './navigation.module.css';
 import Link from 'next/link';
-import { Inter } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import IconType from '../icon/iconType';
-
-const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
 const MobileNavigation = () => {
   const [visible, setVisible] = useState(false);
@@ -16,6 +13,7 @@ const MobileNavigation = () => {
   const handleVisibility = () => {
     setVisible((prev) => !prev);
   };
+
   return (
     <header
       className={cls(
@@ -43,10 +41,10 @@ const MobileNavigation = () => {
         )}
       >
         <Link
-          href={'/'}
+          href={'/home'}
           className={cls(
             styles.link,
-            ` ${pathname === '/' && styles.active_link}`
+            ` ${pathname === '/home' && styles.active_link}`
           )}
         >
           <span>00</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CodeIcon = ({ size = 4 }: IconPropType) => {
+const LinkIcon = ({ size = 4 }: IconPropType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,10 +13,10 @@ const CodeIcon = ({ size = 4 }: IconPropType) => {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+        d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
       />
     </svg>
   );
 };
 
-export default CodeIcon;
+export default LinkIcon;

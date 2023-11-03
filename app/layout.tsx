@@ -1,21 +1,8 @@
-// 'use client';
 import './globals.css';
-import { Inter, Poppins } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import cls from 'classnames';
-import Navigation from './component/navigation';
-import Banner from './component/banner';
-import Socials from './component/socials';
-
-import styles from './layout.module.css';
-import Link from 'next/link';
-import MobileNavigation from './component/navigation/mobile';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
-
-export const metadata = {
-  title: 'Ndulue Paschal',
-  description: 'Portfolio site',
-};
 
 export default function RootLayout({
   children,
@@ -25,32 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cls(poppins.className, 'bg-portfolio-200')}>
-        <main className="lg:flex min-h-screen items-start justify-between md:pb-6 lg:px-12 xl:px-20">
-          <MobileNavigation />
-          <section className="lg:h-screen lg:w-1/2 py-10 md:py-9 lg:py-20 px-6 flex justify-between items-start flex-col text-white">
-            <Banner />
-            <Navigation />
-            <Socials />
-          </section>
-
-          <section className={cls(styles.home, ' lg:px-0')}>{children}</section>
-          {/* <footer className={cls('lg:hidden  px-6 mb-6')}>
-            <section className="flex items-center gap-x-4 text-white justify-between">
-              <Link
-                href={'/'}
-                className="py-3 px-4 bg-portfolio-300 w-1/2 rounded-md text-center"
-              >
-                Home
-              </Link>
-              <Link
-                href={'/article'}
-                className="py-3 px-4 bg-portfolio-300 w-1/2 rounded-md text-center"
-              >
-                Articles
-              </Link>
-            </section>
-          </footer> */}
-        </main>
+        {children}
       </body>
     </html>
   );

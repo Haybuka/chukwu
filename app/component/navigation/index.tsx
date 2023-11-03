@@ -4,9 +4,8 @@ import { usePathname } from 'next/navigation';
 import cls from 'classnames';
 
 import styles from './navigation.module.css';
-import { Inter, Titillium_Web } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const titilium = Titillium_Web({ subsets: ['latin'], weight: '600' });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
 
 const Navigation = () => {
@@ -19,7 +18,7 @@ const Navigation = () => {
           href={'/'}
           className={cls(
             styles.link,
-            ` ${pathname === '/' && styles.active_link}`
+            ` ${pathname === '/home' && styles.active_link}`
           )}
         >
           <span>00</span>
