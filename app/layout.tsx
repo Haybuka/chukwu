@@ -11,7 +11,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cls(poppins.className, 'bg-portfolio-200')}>
+      <body
+        className={cls(
+          poppins.className,
+          'bg-portfolio-200 lg:overflow-y-hidden'
+        )}
+      >
         {children}
       </body>
     </html>
