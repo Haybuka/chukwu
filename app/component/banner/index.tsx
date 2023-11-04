@@ -45,13 +45,15 @@ const Banner = () => {
       <div className=" text-portfolio-100 my-4 block lg:hidden">
         <p className="leading-8 text-sm">
           Im a{' '}
-          <span className="text-white capitalize underline">
+          <span className="text-white capitalize underline animate-pulse">
             software engineer
           </span>
           . I create{' '}
-          <span className="text-white capitalize underline">interactive</span>{' '}
-          web experiences using frontend technology. I am interested in
-          <span className="text-white capitalize underline">
+          <span className="text-white capitalize underline animate-pulse inline-block">
+            interactive
+          </span>{' '}
+          web experiences using frontend technology. I am interested in{' '}
+          <span className="text-white capitalize underline animate-pulse inline-block">
             {' '}
             user experience
           </span>
