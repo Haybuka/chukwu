@@ -31,33 +31,77 @@ const Banner = () => {
         )}
       >
         <p className="lg:leading-8 text-sm">
-          Im a <span className="text-white">software engineer</span>. I create{' '}
-          <span className="text-white">interactive</span> web
+          Im a{' '}
+          <span className="text-white capitalize underline inline-block">
+            software engineer
+          </span>
+          . I create{' '}
+          <span className="text-white capitalize underline inline-block">
+            interactive
+          </span>{' '}
+          web and mobile
         </p>
         <p className=" leading-8 text-sm">
           experiences using frontend technology. I am interested in{' '}
-          <span className="text-white">user experience</span>,
+          <span className="text-white capitalize underline inline-block">
+            user experience
+          </span>
+          ,
         </p>
         <p className=" leading-8 text-sm">
-          accessibility, design systems, gaming, web3 and web animations.
+          accessibility, design systems, web3, and mobile applications.
+        </p>
+        <p className=" leading-8 text-sm">
+          In my spare time i window shop online for dslr&apos;s (i do have a
+          thing for{' '}
+          <span className="text-white capitalize underline inline-block">
+            photography
+          </span>
+          ), strum through a few{' '}
+          <span className="text-white capitalize underline inline-block">
+            guitar
+          </span>{' '}
+          chords and{' '}
+          <span className="text-white capitalize underline inline-block">
+            {' '}
+            connect with family{' '}
+          </span>
         </p>
       </div>
       <div className=" text-portfolio-100 my-4 block lg:hidden">
         <p className="leading-8 text-sm">
           Im a{' '}
-          <span className="text-white capitalize underline animate-pulse">
+          <span className="text-white capitalize underline">
             software engineer
           </span>
           . I create{' '}
-          <span className="text-white capitalize underline animate-pulse inline-block">
+          <span className="text-white capitalize underline inline-block">
             interactive
           </span>{' '}
-          web experiences using frontend technology. I am interested in{' '}
-          <span className="text-white capitalize underline animate-pulse inline-block">
+          web and mobile experiences using frontend technology. I am interested
+          in{' '}
+          <span className="text-white capitalize underline inline-block">
             {' '}
             user experience
           </span>
-          , accessibility, design systems, gaming, web3 and web animations.
+          , accessibility, design systems, web3, and mobile applications.
+        </p>
+        <p className=" leading-8 text-sm">
+          In my spare time i window shop online for dslr&apos;s (i do have a
+          thing for{' '}
+          <span className="text-white capitalize underline inline-block">
+            photography
+          </span>
+          ), strum through a few{' '}
+          <span className="text-white capitalize underline inline-block">
+            guitar
+          </span>{' '}
+          chords and{' '}
+          <span className="text-white capitalize underline inline-block">
+            {' '}
+            connect with family{' '}
+          </span>
+          . ,
         </p>
       </div>
     </article>
