@@ -5,7 +5,6 @@ import cls from 'classnames';
 import styles from '../layout.module.css';
 import LeftUi from '../component/leftUi';
 import MobileNavigation from '../component/navigation/mobile';
-import Socials from '../component/socials';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 

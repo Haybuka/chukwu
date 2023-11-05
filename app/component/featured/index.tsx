@@ -12,7 +12,6 @@ type FeaturedProps = {
 const Featured = ({ title, details, fullwidth, page }: FeaturedProps) => {
   return (
     <aside>
-      {/* <h3 className={styles.header}>{title}</h3> */}
       <div className={!fullwidth ? styles.featured : ''}>
         {details.map((detail, id) => (
           <Card fullWidth={fullwidth} key={id} card={detail} page={page} />

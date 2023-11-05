@@ -1,6 +1,4 @@
 import React from 'react';
-import cls from 'classnames';
-import styles from './card.module.css';
 import PageType from './pageType';
 
 type CardProps = {
