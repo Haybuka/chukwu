@@ -34,12 +34,12 @@ const Banner = () => {
           </span>{' '}
           using frontend technologies that solve real world problems.
         </p>
-        <p className="lg:leading-8 text-sm">
+        <p className="lg:leading-8 text-sm my-2">
           <span className="text-white">Collaboration</span> is a key part of my
           approach. Whether it&apos;s building robust applications, optimizing
           existing systems, or tackling complex problems.
         </p>
-        <p className=" leading-8 text-sm">
+        <p className="lg:leading-8 text-sm my-2">
           In my free time i window shop online for dslr&apos;s (i do have a
           thing for{' '}
           <span className="text-white capitalize  inline-block">
@@ -49,10 +49,8 @@ const Banner = () => {
           <span className="text-white capitalize  inline-block">guitar</span>{' '}
           chords and{' '}
           <span className="text-white capitalize  inline-block">
-            {' '}
             connect with family{' '}
           </span>
-          .
         </p>
       </div>
     </article>
