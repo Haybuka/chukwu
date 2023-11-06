@@ -25,69 +25,22 @@ const Banner = () => {
         </span>
       </h3>
       <div
-        className={cls(
-          titilium.className,
-          ' text-portfolio-100 my-4 hidden lg:block'
-        )}
+        className={cls(titilium.className, ' text-portfolio-100 my-4 block')}
       >
         <p className="lg:leading-8 text-sm">
-          Im a{' '}
-          <span className="text-white capitalize underline inline-block">
-            software engineer
-          </span>
-          . I create{' '}
-          <span className="text-white capitalize underline inline-block">
-            interactive
+          I create interactive{' '}
+          <span className="underline text-white capitalize">
+            web and mobile experiences
           </span>{' '}
-          web and mobile
+          using frontend technologies that solve real world problems.
+        </p>
+        <p className="lg:leading-8 text-sm">
+          <span className="underline text-white">Collaboration</span> is a key
+          part of my approach. Whether it&apos;s building robust applications,
+          optimizing existing systems, or tackling complex problems.
         </p>
         <p className=" leading-8 text-sm">
-          experiences using frontend technology. I am interested in{' '}
-          <span className="text-white capitalize underline inline-block">
-            user experience
-          </span>
-          ,
-        </p>
-        <p className=" leading-8 text-sm">
-          accessibility, design systems, web3, and mobile applications.
-        </p>
-        <p className=" leading-8 text-sm">
-          In my spare time i window shop online for dslr&apos;s (i do have a
-          thing for{' '}
-          <span className="text-white capitalize underline inline-block">
-            photography
-          </span>
-          ), strum through a few{' '}
-          <span className="text-white capitalize underline inline-block">
-            guitar
-          </span>{' '}
-          chords and{' '}
-          <span className="text-white capitalize underline inline-block">
-            {' '}
-            connect with family{' '}
-          </span>
-        </p>
-      </div>
-      <div className=" text-portfolio-100 my-4 block lg:hidden">
-        <p className="leading-8 text-sm">
-          Im a{' '}
-          <span className="text-white capitalize underline">
-            software engineer
-          </span>
-          . I create{' '}
-          <span className="text-white capitalize underline inline-block">
-            interactive
-          </span>{' '}
-          web and mobile experiences using frontend technology. I am interested
-          in{' '}
-          <span className="text-white capitalize underline inline-block">
-            {' '}
-            user experience
-          </span>
-          , accessibility, design systems, web3, and mobile applications.
-        </p>
-        <p className=" leading-8 text-sm">
-          In my spare time i window shop online for dslr&apos;s (i do have a
+          In my free time i window shop online for dslr&apos;s (i do have a
           thing for{' '}
           <span className="text-white capitalize underline inline-block">
             photography
