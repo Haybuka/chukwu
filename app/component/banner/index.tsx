@@ -29,32 +29,30 @@ const Banner = () => {
       >
         <p className="lg:leading-8 text-sm">
           I create interactive{' '}
-          <span className="underline text-white capitalize">
+          <span className=" text-white capitalize">
             web and mobile experiences
           </span>{' '}
           using frontend technologies that solve real world problems.
         </p>
         <p className="lg:leading-8 text-sm">
-          <span className="underline text-white">Collaboration</span> is a key
-          part of my approach. Whether it&apos;s building robust applications,
-          optimizing existing systems, or tackling complex problems.
+          <span className="text-white">Collaboration</span> is a key part of my
+          approach. Whether it&apos;s building robust applications, optimizing
+          existing systems, or tackling complex problems.
         </p>
         <p className=" leading-8 text-sm">
           In my free time i window shop online for dslr&apos;s (i do have a
           thing for{' '}
-          <span className="text-white capitalize underline inline-block">
+          <span className="text-white capitalize  inline-block">
             photography
           </span>
           ), strum through a few{' '}
-          <span className="text-white capitalize underline inline-block">
-            guitar
-          </span>{' '}
+          <span className="text-white capitalize  inline-block">guitar</span>{' '}
           chords and{' '}
-          <span className="text-white capitalize underline inline-block">
+          <span className="text-white capitalize  inline-block">
             {' '}
             connect with family{' '}
           </span>
-          . ,
+          .
         </p>
       </div>
     </article>
