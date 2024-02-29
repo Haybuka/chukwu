@@ -51,6 +51,19 @@ export const featured = [
       },
     ],
   },
+    {
+    name: 'Portfolio',
+    description:
+      'Current portfolio site',
+    stack: 'Next JS + TailwindCss',
+    links: [
+      {
+        label: 'Live',
+        path: 'https://chukwu.vercel.app/',
+        icon: 'eye',
+      },
+    ],
+  }
 ];
 
 export const others = [
