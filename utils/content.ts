@@ -7,7 +7,7 @@ export const featured = [
     links: [
       {
         label: 'Live',
-        path: 'https://doravet-lake.vercel.app/',
+        path: 'https://doravet.vercel.app/',
         icon: 'eye',
       },
     ],
@@ -33,7 +33,20 @@ export const featured = [
     links: [
       {
         label: 'Live',
-        path: 'https://ivr-haybuka.vercel.app/',
+        path: 'https://www.ivrpowerworks.com/',
+        icon: 'eye',
+      },
+    ],
+  },
+  {
+    name: 'Sectify',
+    description:
+      'An election creator portal. Sectify is meant to leverage on web3 in other to create secure adn reliant system.',
+    stack: 'NextJs + Tailwind + React Query + React Table',
+    links: [
+      {
+        label: 'Live',
+        path: 'https://sectify-gray.vercel.app/',
         icon: 'eye',
       },
     ],
