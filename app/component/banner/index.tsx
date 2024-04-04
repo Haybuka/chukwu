@@ -68,7 +68,7 @@ const Banner = () => {
             Frameworks / Libraries:{' '}
           </span>
           <span className="  capitalize">
-            ReactJs, NextJs, React Native, KaiOs , Redux.
+            ReactJs, NextJs, React Native, KaiOs , Redux, Tanstack Query.
           </span>
         </p>
         <p className="lg:leading-8 text-sm">

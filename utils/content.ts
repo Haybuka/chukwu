@@ -1,5 +1,18 @@
 export const featured = [
   {
+    name: 'Proxy Store : Utility App',
+    description:
+      'Design of a utility app that helps users to purchase daily utility items and services easily.',
+    stack: 'React Native Expo',
+    links: [
+      {
+        label: 'Github',
+        path: 'https://github.com/Haybuka/proxyStoreApp',
+        icon: 'eye',
+      },
+    ],
+  },
+  {
     name: 'Doravet',
     description:
       'An E-voting blockchain application, presented for a web 3 hackathon',
