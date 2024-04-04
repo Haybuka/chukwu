@@ -51,11 +51,10 @@ export const featured = [
       },
     ],
   },
-    {
+  {
     name: 'Portfolio',
-    description:
-      'Current portfolio site',
-    stack: 'Next JS + TailwindCss',
+    description: 'Current portfolio site',
+    stack: 'Next JS + TailwindCss + Typescript',
     links: [
       {
         label: 'Live',
@@ -63,7 +62,7 @@ export const featured = [
         icon: 'eye',
       },
     ],
-  }
+  },
 ];
 
 export const others = [
@@ -221,6 +220,11 @@ export const navigation = [
     name: 'article',
     icon: '',
     link: '/article',
+  },
+  {
+    name: 'Resume',
+    icon: '',
+    link: 'https://docs.google.com/document/d/1BGwgBCQSIumC4gtUk2I4YcSY-8X_-t42zAfu4ruA-O0/edit?usp=sharing',
   },
   {
     name: 'Linked In',
