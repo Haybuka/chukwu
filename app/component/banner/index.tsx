@@ -39,7 +39,7 @@ const Banner = () => {
           approach. Whether it&apos;s building robust applications, optimizing
           existing systems, or tackling complex problems.
         </p>
-        <p className="lg:leading-8 text-sm my-2">
+        <p className="lg:leading-8 text-sm my-2 hidden">
           In my free time i window shop online for dslr&apos;s (i do have a
           thing for{' '}
           <span className="text-white capitalize  inline-block">
@@ -50,6 +50,31 @@ const Banner = () => {
           chords and{' '}
           <span className="text-white capitalize  inline-block">
             connect with family{' '}
+          </span>
+        </p>
+      </div>
+      <div
+        className={cls(titilium.className, ' text-portfolio-100 my-4 block')}
+      >
+        <p className="lg:leading-8 text-sm">
+          <span className=" text-white capitalize">Technologies: </span>
+          <span className="  capitalize">
+            HTML 5, CSS, JavaScript, Tailwind CSS, Material UI, jQuery, Framer
+            Motion, Responsive Design, Photoshop, Styled Components.
+          </span>
+        </p>
+        <p className="lg:leading-8 text-sm">
+          <span className=" text-white capitalize">
+            Frameworks / Libraries:{' '}
+          </span>
+          <span className="  capitalize">
+            ReactJs, NextJs, React Native, KaiOs , Redux.
+          </span>
+        </p>
+        <p className="lg:leading-8 text-sm">
+          <span className=" text-white capitalize">Tools: </span>
+          <span className="  capitalize">
+            Git, GitHub, Visual Studio Code, Android Studio.
           </span>
         </p>
       </div>
