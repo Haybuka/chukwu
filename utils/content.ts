@@ -3,7 +3,7 @@ export const featured = [
     name: 'Proxy Store : Utility App',
     description:
       'Design of a utility app that helps users to purchase daily utility items and services easily.',
-    stack: 'React Native Expo',
+    stack: 'React Native Expo + Yup validation + Tailwind + React Hook form',
     links: [
       {
         label: 'Github',
