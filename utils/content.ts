@@ -6,21 +6,21 @@ export const featured = [
     stack: 'React Native Expo + Yup validation + Tailwind + React Hook form',
     links: [
       {
-        label: 'Github',
-        path: 'https://github.com/Haybuka/proxyStoreApp',
+        label: 'Expo',
+        path: 'https://expo.dev/preview/update?message=cleanup&updateRuntimeVersion=1.0.0&createdAt=2024-04-09T21%3A49%3A39.643Z&slug=exp&projectId=29c0a3c2-1f1a-425e-a1d0-f188b17e92d3&group=326cf22a-32b5-45ba-aaa5-d735d5c3fe24',
         icon: 'eye',
       },
     ],
   },
   {
-    name: 'Doravet',
+    name: 'Power Works',
     description:
-      'An E-voting blockchain application, presented for a web 3 hackathon',
-    stack: 'Next JS + Web 3',
+      'A business platform for an electrical based company with highlights on services rendered',
+    stack: 'Next Js + Tailwind',
     links: [
       {
         label: 'Live',
-        path: 'https://doravet.vercel.app/',
+        path: 'https://www.ivrpowerworks.com/',
         icon: 'eye',
       },
     ],
@@ -39,14 +39,14 @@ export const featured = [
     ],
   },
   {
-    name: 'Power Works',
+    name: 'Doravet',
     description:
-      'A business platform for an electrical based company with highlights on services rendered',
-    stack: 'React + Tailwind',
+      'An E-voting blockchain application, presented for a web 3 hackathon',
+    stack: 'Next JS + Web 3',
     links: [
       {
         label: 'Live',
-        path: 'https://www.ivrpowerworks.com/',
+        path: 'https://doravet.vercel.app/',
         icon: 'eye',
       },
     ],
