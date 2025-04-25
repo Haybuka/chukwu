@@ -10,9 +10,7 @@ export default function Home() {
       <p className="text-center my-4 text-white text-[0.7rem] md:translate-y-10">
         <span className=" text-portfolio-100">Inspired by </span>
         <Link href={'https://www.sarahdayan.dev/'}>Sarah Dayan</Link>
-        <span className=" text-portfolio-100"> and </span>
-
-        <Link href={'https://kadet.dev/'}>Kadet</Link>
+       
       </p>
     </article>
   );
